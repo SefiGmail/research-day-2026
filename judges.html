@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For Judges – Graduate Students Research Day 2026, Faculty of Mechanical Engineering, Technion">
+    <title>For Judges – Graduate Research Day 2026 – ME Technion</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+    <div class="header-inner">
+
+        <a class="header-logo-area" href="index.html" aria-label="Home">
+            <img src="images/logo.png"
+                 alt="Faculty of Mechanical Engineering, Technion"
+                 onerror="this.style.display='none'">
+            <div class="logo-text">
+                <span class="lang-en">Faculty of Mechanical Engineering · Technion</span>
+                <span class="lang-he" style="display:none">הפקולטה להנדסת מכונות · הטכניון</span>
+            </div>
+        </a>
+
+        <nav class="header-nav">
+            <a class="home-link" href="index.html" id="home-link">
+                <span class="lang-en">&#8592; Home</span>
+                <span class="lang-he" style="display:none">דף הבית &#8594;</span>
+            </a>
+            <button class="lang-btn" id="lang-btn" onclick="toggleLanguage()" aria-label="Switch language">
+                עברית
+            </button>
+        </nav>
+
+    </div>
+</header>
+
+<!-- ============================================================
+     JUDGES CONTENT
+     ============================================================ -->
+<main class="page-container">
+
+    <h1 class="page-title">
+        <span class="lang-en">For Judges</span>
+        <span class="lang-he" style="display:none">לשופטים</span>
+    </h1>
+
+    <p class="page-subtitle">
+        <span class="lang-en">Graduate Students Research Day &nbsp;·&nbsp; May 13, 2026 &nbsp;·&nbsp; Kahn Building</span>
+        <span class="lang-he" style="display:none">יום מחקר לסטודנטים לתארים מתקדמים &nbsp;·&nbsp; 13 במאי 2026 &nbsp;·&nbsp; בניין קאהן</span>
+    </p>
+
+    <!-- PASSWORD GATE (shown by default) -->
+    <div class="password-gate" id="password-gate">
+
+        <p class="password-prompt">
+            <span class="lang-en">Enter the password to access the judges&rsquo; evaluation form.</span>
+            <span class="lang-he" style="display:none">הכנס סיסמה כדי לגשת לטופס הערכת השופטים.</span>
+        </p>
+
+        <div class="password-form">
+            <input
+                type="password"
+                id="password-input"
+                class="password-input"
+                placeholder="Password / סיסמה"
+                aria-label="Password"
+                autocomplete="current-password"
+            >
+            <button class="password-submit" id="password-submit" onclick="checkPassword()">
+                <span class="lang-en">Submit</span>
+                <span class="lang-he" style="display:none">אישור</span>
+            </button>
+        </div>
+
+        <p class="password-error" id="password-error" style="display:none">
+            <span class="lang-en">Incorrect password. Please try again.</span>
+            <span class="lang-he" style="display:none">סיסמה שגויה. אנא נסה שנית.</span>
+        </p>
+
+    </div>
+
+    <!-- FORM ACCESS PANEL (hidden until correct password is entered) -->
+    <!-- TODO: Replace JUDGES_FORM_URL with your Google Form link -->
+    <div class="judges-form-panel" id="judges-form-panel" style="display:none">
+
+        <p class="form-ready-text">
+            <span class="lang-en">You are now authenticated. Click the button below to open the evaluation form.</span>
+            <span class="lang-he" style="display:none">אומתת בהצלחה. לחץ על הכפתור למטה כדי לפתוח את טופס ההערכה.</span>
+        </p>
+
+        <a class="form-open-btn" href="JUDGES_FORM_URL" target="_blank" rel="noopener noreferrer">
+            <span class="lang-en">Open Evaluation Form &#8594;</span>
+            <span class="lang-he" style="display:none">פתח טופס הערכה &#8592;</span>
+        </a>
+
+    </div>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+    <span class="lang-en">
+        Graduate Students Research Day 2026 &nbsp;·&nbsp;
+        Faculty of Mechanical Engineering, Technion &ndash; Israel Institute of Technology
+    </span>
+    <span class="lang-he" style="display:none">
+        יום מחקר לסטודנטים לתארים מתקדמים 2026 &nbsp;·&nbsp;
+        הפקולטה להנדסת מכונות, הטכניון &ndash; מכון טכנולוגי לישראל
+    </span>
+</footer>
+
+<!-- ============================================================
+     LANGUAGE TOGGLE + PASSWORD SCRIPT
+     ============================================================ -->
+<script>
+    // ── Password ────────────────────────────────────────────────
+    // TODO: Replace JUDGES_PASSWORD with your actual password
+    var CORRECT_PASSWORD = 'ThankYou#2026';
+
+    function checkPassword() {
+        var input = document.getElementById('password-input');
+        var errorEl = document.getElementById('password-error');
+        var gate = document.getElementById('password-gate');
+        var panel = document.getElementById('judges-form-panel');
+
+        if (input.value === CORRECT_PASSWORD) {
+            gate.style.display = 'none';
+            panel.style.display = '';
+            errorEl.style.display = 'none';
+        } else {
+            errorEl.style.display = '';
+            // Show error in correct language
+            var isHebrew = document.documentElement.lang === 'he';
+            errorEl.querySelectorAll('.lang-en').forEach(function(el) {
+                el.style.display = isHebrew ? 'none' : '';
+            });
+            errorEl.querySelectorAll('.lang-he').forEach(function(el) {
+                el.style.display = isHebrew ? '' : 'none';
+            });
+            input.value = '';
+            input.focus();
+        }
+    }
+
+    // Allow Enter key to submit
+    document.addEventListener('DOMContentLoaded', function() {
+        var input = document.getElementById('password-input');
+        if (input) {
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') { checkPassword(); }
+            });
+        }
+    });
+
+    // ── Language ────────────────────────────────────────────────
+    function applyLanguage(isHebrew) {
+        var btn = document.getElementById('lang-btn');
+        var homeLink = document.getElementById('home-link');
+        var logoHomeLink = document.querySelector('.header-logo-area');
+
+        if (isHebrew) {
+            document.documentElement.lang = 'he';
+            document.documentElement.dir = 'rtl';
+            document.querySelectorAll('.lang-en').forEach(function(el) { el.style.display = 'none'; });
+            document.querySelectorAll('.lang-he').forEach(function(el) { el.style.display = ''; });
+            btn.textContent = 'English';
+            if (homeLink) homeLink.href = 'index.html?lang=he';
+            if (logoHomeLink) logoHomeLink.href = 'index.html?lang=he';
+        } else {
+            document.documentElement.lang = 'en';
+            document.documentElement.dir = 'ltr';
+            document.querySelectorAll('.lang-en').forEach(function(el) { el.style.display = ''; });
+            document.querySelectorAll('.lang-he').forEach(function(el) { el.style.display = 'none'; });
+            btn.textContent = 'עברית';
+            if (homeLink) homeLink.href = 'index.html';
+            if (logoHomeLink) logoHomeLink.href = 'index.html';
+        }
+
+        // Re-hide the error message spans when language switches
+        var errorEl = document.getElementById('password-error');
+        if (errorEl && errorEl.style.display !== 'none') {
+            errorEl.querySelectorAll('.lang-en').forEach(function(el) {
+                el.style.display = isHebrew ? 'none' : '';
+            });
+            errorEl.querySelectorAll('.lang-he').forEach(function(el) {
+                el.style.display = isHebrew ? '' : 'none';
+            });
+        }
+    }
+
+    function toggleLanguage() {
+        applyLanguage(document.documentElement.lang !== 'he');
+    }
+
+    (function initLanguageFromQuery() {
+        var params = new URLSearchParams(window.location.search);
+        applyLanguage(params.get('lang') === 'he');
+    })();
+</script>
+
+</body>
+</html>

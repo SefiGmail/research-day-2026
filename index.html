@@ -109,6 +109,24 @@
             </span>
         </a>
 
+        <!-- People's Choice Poster Award -->
+        <!-- TODO: Replace PEOPLES_CHOICE_FORM_URL with your Google Form link -->
+        <a class="nav-card"
+           href="PEOPLES_CHOICE_FORM_URL"
+           target="_blank"
+           rel="noopener noreferrer"
+           id="peoples-choice-link">
+            <span class="card-icon">🏆</span>
+            <span class="card-title">
+                <span class="lang-en">Vote for your favourite poster</span>
+                <span class="lang-he" style="display:none">הצביעו עבור הפוסטר האהוב עליכם</span>
+            </span>
+            <span class="card-desc">
+                <span class="lang-en">People's Choice Poster Award</span>
+                <span class="lang-he" style="display:none">פרס פוסטר חביב הקהל</span>
+            </span>
+        </a>
+
         <!-- Faculty Members -->
         <a class="nav-card"
            href="https://meeng.technion.ac.il/en/member_category/professors/"
@@ -122,12 +140,12 @@
                 <img src="images/faculty-icon-v3.svg" alt="" class="card-icon-image" aria-hidden="true">
             </span>
             <span class="card-title">
-                <span class="lang-en">Faculty Members</span>
-                <span class="lang-he" style="display:none">חברי סגל</span>
+                <span class="lang-en">Our Faculty Members</span>
+                <span class="lang-he" style="display:none">מידע על חברי הסגל שלנו</span>
             </span>
             <span class="card-desc">
                 <span class="lang-en">Meet the faculty of Mechanical Engineering</span>
-                <span class="lang-he" style="display:none">חברי הסגל של הפקולטה להנדסת מכונות</span>
+                <span class="lang-he" style="display:none">חברי הסגל בפקולטה להנדסת מכונות</span>
             </span>
         </a>
 
@@ -150,16 +168,10 @@
         </a>
 
         <!-- For Judges -->
-        <!-- TODO: Replace JUDGES_FORM_URL with your Google Form link -->
-        <a class="nav-card"
-           href="JUDGES_FORM_URL"
-           target="_blank"
-           rel="noopener noreferrer"
-           id="judges-link">
-            <span class="card-icon">🏆</span>
+        <a class="nav-card judges-card" href="judges.html" id="judges-link">
             <span class="card-title">
-                <span class="lang-en">For Judges</span>
-                <span class="lang-he" style="display:none">לשופטים</span>
+                <span class="lang-en">For Judges (Requires Password)</span>
+                <span class="lang-he" style="display:none">לשופטים (נדרשת סיסמה)</span>
             </span>
             <span class="card-desc">
                 <span class="lang-en">Judges' evaluation form</span>
@@ -194,6 +206,7 @@
         var scheduleLink = document.getElementById('schedule-link');
         var postersLink = document.getElementById('posters-link');
         var facultyLink = document.getElementById('faculty-link');
+        var judgesLink = document.getElementById('judges-link');
         var logoHomeLink = document.querySelector('.header-logo-area');
 
         if (isHebrew) {
@@ -205,6 +218,7 @@
             if (scheduleLink) scheduleLink.href = 'schedule.html?lang=he';
             if (postersLink) postersLink.href = 'posters.html';
             if (facultyLink) facultyLink.href = facultyLink.dataset.hrefHe;
+            if (judgesLink) judgesLink.href = 'judges.html?lang=he';
             if (logoHomeLink) logoHomeLink.href = 'index.html?lang=he';
         } else {
             document.documentElement.lang = 'en';
@@ -215,6 +229,7 @@
             if (scheduleLink) scheduleLink.href = 'schedule.html';
             if (postersLink) postersLink.href = 'posters.html';
             if (facultyLink) facultyLink.href = facultyLink.dataset.hrefEn;
+            if (judgesLink) judgesLink.href = 'judges.html';
             if (logoHomeLink) logoHomeLink.href = 'index.html';
         }
     }

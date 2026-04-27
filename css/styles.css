@@ -247,6 +247,38 @@ body {
     color: var(--primary);
 }
 
+.nav-card.judges-card {
+    background: linear-gradient(180deg, #dde6f1 0%, #ccd8e8 100%);
+    border-color: #92a7c3;
+    color: #1f314a;
+}
+
+.nav-card.judges-card::before {
+    background: linear-gradient(90deg, #4f678c 0%, #3a5577 100%);
+}
+
+.nav-card.judges-card .card-icon {
+    background: #c6d4e5;
+    border-color: #8ea4bf;
+}
+
+.nav-card.judges-card .card-title {
+    color: #1b3456;
+}
+
+.nav-card.judges-card .card-desc {
+    color: #455c7a;
+}
+
+.nav-card.judges-card:hover {
+    border-color: #738dac;
+    box-shadow: 0 12px 24px rgba(32, 50, 78, 0.24);
+}
+
+.nav-card.judges-card:hover .card-title {
+    color: #173053;
+}
+
 .card-icon {
     font-size: 2.4rem;
     line-height: 1;
@@ -506,4 +538,110 @@ body {
     .nav-cards {
         grid-template-columns: 1fr;
     }
+}
+
+/* =============================================
+   JUDGES — PASSWORD GATE
+   ============================================= */
+
+.password-gate {
+    max-width: 480px;
+    margin: 32px auto 0;
+    background: #fff;
+    border-radius: 14px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 24px rgba(0, 56, 131, 0.10);
+    text-align: center;
+}
+
+.password-prompt {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.password-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.password-input {
+    flex: 1;
+    min-width: 180px;
+    max-width: 260px;
+    padding: 11px 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--gray-light);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.password-input:focus {
+    border-color: var(--primary);
+    background: #fff;
+}
+
+.password-submit {
+    padding: 11px 26px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+
+.password-submit:hover {
+    background: var(--primary-dark);
+}
+
+.password-error {
+    margin-top: 16px;
+    color: #c0392b;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+/* ── Form access panel (revealed after correct password) ── */
+
+.judges-form-panel {
+    max-width: 480px;
+    margin: 32px auto 0;
+    background: #fff;
+    border-radius: 14px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 24px rgba(0, 56, 131, 0.10);
+    text-align: center;
+}
+
+.form-ready-text {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+.form-open-btn {
+    display: inline-block;
+    padding: 13px 32px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.18s;
+}
+
+.form-open-btn:hover {
+    background: var(--primary-dark);
+    text-decoration: none;
 }
