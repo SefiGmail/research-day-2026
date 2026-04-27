@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Poster icon option 5">
+  <defs>
+    <linearGradient id="p5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#003883"/>
+      <stop offset="100%" stop-color="#3d5f8f"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="#f7f9fc"/>
+
+  <rect x="16" y="12" width="32" height="40" rx="3.5" fill="#ffffff" stroke="url(#p5)" stroke-width="2.2"/>
+  <circle cx="22" cy="18" r="1.8" fill="#a8d144"/>
+  <circle cx="42" cy="18" r="1.8" fill="#a8d144"/>
+
+  <rect x="21" y="24" width="22" height="2.8" rx="1.4" fill="url(#p5)"/>
+  <rect x="21" y="30" width="18" height="2.5" rx="1.25" fill="#9fb3cf"/>
+  <rect x="21" y="35" width="20" height="2.5" rx="1.25" fill="#9fb3cf"/>
+  <rect x="21" y="40" width="14" height="2.5" rx="1.25" fill="#9fb3cf"/>
+</svg>

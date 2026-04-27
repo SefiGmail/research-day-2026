@@ -1,0 +1,509 @@
+/* ==============================================
+   Technion ME – Graduate Research Day 2026
+   ============================================== */
+
+:root {
+    --primary:       #003883;
+    --primary-dark:  #002a63;
+    --primary-light: #cfd7e4;
+    --accent:        #a8d144;
+    --text:          #172235;
+    --text-light:    #4a5a72;
+    --white:         #ffffff;
+    --gray-light:    #e3e6eb;
+    --border:        #c4cad4;
+    --shadow:        0 4px 14px rgba(0, 56, 131, 0.10);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    background: var(--gray-light);
+    line-height: 1.65;
+    font-size: 16px;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+
+.site-header {
+    background: linear-gradient(90deg, #1a2332 0%, #22314a 50%, #1c2738 100%);
+    color: var(--white);
+    box-shadow: 0 2px 10px rgba(10, 15, 25, 0.45);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 28px;
+    gap: 16px;
+}
+
+.header-logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--white);
+    min-width: 0;
+}
+
+.header-logo-area img {
+    height: 52px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.92;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.14);
+    color: var(--white);
+    border: 1.5px solid rgba(255, 255, 255, 0.45);
+    padding: 6px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.26);
+}
+
+.home-link {
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.home-link:hover {
+    background: rgba(255, 255, 255, 0.13);
+    color: var(--white);
+}
+
+/* =============================================
+   HERO SECTION
+   ============================================= */
+
+.hero {
+    background: linear-gradient(150deg, #d8dde5 0%, #c7ceda 52%, #e1e5ec 100%);
+    color: var(--primary-dark);
+    padding: 72px 28px 60px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.hero h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 36px;
+    line-height: 1.6;
+}
+
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 18px;
+}
+
+.detail-pill {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #b6c1d2;
+    border-radius: 24px;
+    padding: 9px 22px;
+    font-size: 0.96rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text);
+}
+
+.detail-pill .pill-icon {
+    font-size: 1.05rem;
+}
+
+/* =============================================
+   MAIN CONTENT AREA
+   ============================================= */
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 52px 28px 72px;
+    background: #d8dde6;
+    border: 1px solid #bac3d1;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(26, 35, 50, 0.10);
+}
+
+.section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #adb7c8;
+}
+
+/* =============================================
+   NAVIGATION CARDS
+   ============================================= */
+
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.nav-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff 0%, #f1f4f8 100%);
+    border: 1px solid #bcc7d8;
+    border-radius: 12px;
+    padding: 30px 24px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0 5px 14px rgba(26, 35, 50, 0.09);
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #003883 0%, #4b5d7a 100%);
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(26, 35, 50, 0.16);
+    border-color: #8fa3bf;
+}
+
+.nav-card:hover .card-title {
+    color: var(--primary);
+}
+
+.card-icon {
+    font-size: 2.4rem;
+    line-height: 1;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9eef5;
+    border: 1px solid #c7d0dd;
+    transition: transform 0.18s, background 0.18s, border-color 0.18s;
+}
+
+.card-icon-image {
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+
+.nav-card:hover .card-icon {
+    transform: scale(1.05);
+    background: #d8e2f1;
+    border-color: #9eb1ca;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+    transition: color 0.18s;
+}
+
+.card-desc {
+    font-size: 0.86rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* =============================================
+   SCHEDULE PAGE
+   ============================================= */
+
+.page-container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 52px 28px 72px;
+    background: #d8dde6;
+    border: 1px solid #bac3d1;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(26, 35, 50, 0.10);
+}
+
+.page-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 0.97rem;
+    color: var(--text-light);
+    margin-bottom: 44px;
+}
+
+/* Posters list */
+
+.poster-list {
+    display: grid;
+    gap: 16px;
+}
+
+.poster-item {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 3px 10px rgba(26, 35, 50, 0.07);
+}
+
+.poster-title {
+    font-size: 1.03rem;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.poster-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dashed rgba(0, 56, 131, 0.5);
+    padding-bottom: 1px;
+}
+
+.poster-links a:hover {
+    color: #002a63;
+    border-bottom-color: #002a63;
+}
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+    padding-left: 28px;
+    border-left: 3px solid var(--primary-light);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 26px;
+    box-shadow: var(--shadow);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 26px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 3px solid var(--white);
+    box-shadow: 0 0 0 2px var(--primary);
+}
+
+.timeline-time {
+    font-size: 1.0rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 7px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+}
+
+.timeline-event {
+    font-size: 1.08rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.timeline-location {
+    font-size: 0.87rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+
+.site-footer {
+    background: linear-gradient(90deg, #1a2332 0%, #22314a 50%, #1c2738 100%);
+    color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    padding: 22px 28px;
+    font-size: 0.84rem;
+    line-height: 1.6;
+}
+
+.site-footer a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =============================================
+   RTL OVERRIDES (Hebrew)
+   ============================================= */
+
+[dir="rtl"] body {
+    font-family: 'Segoe UI', 'Arial Hebrew', Arial, sans-serif;
+}
+
+[dir="rtl"] .timeline {
+    padding-left: 0;
+    padding-right: 28px;
+    border-left: none;
+    border-right: 3px solid var(--primary-light);
+}
+
+[dir="rtl"] .timeline-item::before {
+    left: auto;
+    right: -38px;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+
+    .hero {
+        padding: 52px 20px 44px;
+    }
+
+    .header-inner {
+        padding: 12px 18px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+
+@media (max-width: 560px) {
+    .hero h1 {
+        font-size: 1.45rem;
+    }
+
+    .detail-pill {
+        font-size: 0.88rem;
+        padding: 7px 14px;
+    }
+
+    .nav-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-content,
+    .page-container {
+        padding: 36px 16px 52px;
+    }
+
+    .section-label {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-cards {
+        grid-template-columns: 1fr;
+    }
+}
