@@ -362,10 +362,18 @@ body {
 
 .poster-title {
     font-size: 1.03rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.45;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     color: var(--text);
+}
+
+.poster-presenter {
+    font-weight: 700;
+}
+
+.poster-topic {
+    font-style: italic;
 }
 
 .poster-links a {

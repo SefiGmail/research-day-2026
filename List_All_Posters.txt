@@ -1,0 +1,50 @@
+Poster 1 | MSc | Yuting Yang | Advancing high-rate Mechanical Testing with a Novel Optical Force–Displacement Sensor | Supervisor: Prof. Doron Shilo, Dr. Eilon Faran
+Poster 2 | PhD | Avital Reizman Einhorn | Constructive Hebbian Learning of Janus Floating Particles: Self-Assembling Physical Neural Networks via Capillary Interactions | Supervisor: Prof. Amir Gat and Prof. Omri Ram
+Poster 3 | PhD | Ezra Ben-Abu | Self-deploying reinforced concrete structures | Supervisor: Prof. Amir Gat
+Poster 4 | Post doc | Chieh-li Liu | Spin-Valley Atomically Thin Semiconductor Rashba Lasers   | Supervisor: Prof. Erez Hasman
+Poster 5 | MSc | Bar Itskovitch Kiner | Learning to Walk Together: User–Exoskeleton Adaptation Across Repeated Gait Training Sessions  | Supervisor: Asst. Prof. Arielle G. Fischer
+Poster 6 | MSc | עידן ויסלר | Mitigating NOx Emissions in Hydrogen Engines Through Fuel Cell-Assisted Oxygen-Diluted Combustion  | Supervisor: Asst. Prof. Andy Thawko
+Poster 7 | MSc | Sharon Atlan | Control of Deflagration-to-Detonation Transition by Surface Plasma in a Microchannel  | Supervisor: Asst. Prof. Andy Thawko
+Poster 8 | PhD | Yaakov Lancer | Theoretical Studying of the Distinctive Dependence of Ideal Otto Cycle Efficiency on Fuel Thermochemical Properties  | Supervisor: Asst. Prof. Andy Thawko
+Poster 9 | MSc | Omer Gazit-Orlov | The Effect of Air Utilization Factor on Solid-Oxide Fuel Cell Performance  | Supervisor: Asst. Prof. Andy Thawko
+Poster 10 | MSc | Itamar Givon | Microfabrication of Micropost Arrays with Varying Stiffness Gradients for Measuring Durotaxis in Endothelial Cells  | Supervisor: Asst. Prof. Leeya Engel
+Poster 11 | MSc | בועז גבריאל | Closed loop thermocapillary shaping  | Supervisor: Prof. Moran Bercovici
+Poster 12 | Msc | Said Nassar Marjiya | Particle Image Velocimetry Investigation of Heat Transfer in a Pulsating Coaxial Impinging Jet at Small Stand-off Distance  | Supervisor: Prof. Rene Van Hout
+Poster 13 | Msc | Asher John Joshua | Load-Path Geometry Governs Stiffness in Ordered and Disordered Lattice Networks  | Supervisor: Proff Daniel Rittel
+Poster 14 | PhD | Yoni Reingewirtz | Independently controlled Coaxial Synthetic Jet  | Supervisor: Prof. Rene Van Hout
+Poster 15 | PhD | Kostiantyn Kuzmenko | Transition Forcing on Blunt-Nosed Hypersonic Wind-Tunnel Models using DBD Plasma Actuation  | Supervisor: Prof. David Greenblatt
+Poster 16 | PhD | Yoav Gichon | Shock Interaction With Contraction of Various Geometries  | Supervisor: Asst. Prof. Omri Ram
+Poster 17 | PhD | Zvi Chapnik | Sample Efficient Learning of Body-Environment Interaction of an Underactuated Locomotion System  | Supervisor: Prof. Yizhar Or, Asst. Prof Shai Revzen
+Poster 18 | MSc | Yaron Resnick | Instance segmentation of Deformable Linear Objects (DLOs) from RGBD images using learning methods   | Supervisor: Prof. Anath Fisher. Ronit Schneor
+Poster 19 | PhD | Yohai Ackerman | Data-Driven SVD-Based Adaptive Actuation Method for Flexible Structures with Two Dominant Modes  | Supervisor: Prof. Izhak Bucher
+Poster 20 | PhD | Nitzan Judah | Mechanics of Compressed Beams Subjected to Non-Linear Constraints  | Supervisor: Prof. Sefi Givli
+Poster 21 | PhD | Leeor Ravina | Supervised Learning for Approximating Time-Optimal Control of Mobile Robots under Explicit Acceleration Constraints  | Supervisor: Prof. Elon Rimon
+Poster 22 | MSc | Eitan Gerber | Deep Learning Based Sensor Fusion for Endpoint Prediction and Control of Transhumeral Prostheses  | Supervisor: Asst. Prof. Nili Krausz
+Poster 23 | MSc | Omri Ben Haim | Shock Wave Propagation in a Conduit with a Porous Wall  | Supervisor: Asst. Prof. Omri Ram
+Poster 24 | MSc | ori levy | the behavior of elastica-based bistable element: analytical approach  | Supervisor: Prof. Sefi Givli
+Poster 25 | PhD | Shahar Zuckerman | Cavitation Onset Induced by Surface-Mounted Obstacles  | Supervisor: Asst. Prof. Omri Ram
+Poster 26 | Msc | Raz Heppner | Shock propagation through a local Constriction  | Supervisor: Asst. Prof. Omri Ram
+Poster 27 | MSc | Ido Dahan | Human motion analysis using learning methods from EMG sensors and 3D cameras for Human-Robot collaboration  | Supervisor: Prof. Anath Fisher. Ronit Schneor
+Poster 28 | PhD | Dorin Shapira | Micro-Curved Plate Resonators for Bio-Sensing  | Supervisor: Asst. Prof. Leeya Engel
+Poster 29 | PhD | Denis Buntin | Multi-stage heat release (MSHR) macro-dynamic analysis of polyoxymethylene dimethyl ethers (PODEn)   | Supervisor: Prof. Leonid Tartakovsky
+Poster 30 | MSc | Roni Davidov | Deep Learning-Based Classification for Eye Diseases using OCT Images  | Supervisor: Prof. Anath Fisher. Ronit Schneor
+Poster 31 | PhD | Sagi Senderovich | Design and Optimization of an Autonomous Fluid-Driven Medical Catheter  | Supervisor: Prof. Amir Gat
+Poster 32 | PhD | Kunal Gaikwad | Inertial effects on dispersion of polydisperse beads in a turbulent coaxial jet in the two-way coupling regime  | Supervisor: Prof. Rene Van Hout
+Poster 33 | PhD | Itai Danieli | Thermo-Optical Characterization, Bubble Dynamics and Impact Response of Methylcellulose for Shock Mitigation  | Supervisor: Prof. Emetitus Daniel Rittel
+Poster 34 | MSc | Maria Dahmosh | Motor Learning and Gait Adaptation to Lower-Limb Prosthetic Use in Able-Bodied Individuals Using a Bypass Prosthesis  | Supervisor: Asst. Prof. Nili Krausz
+Poster 35 | MSc | Elad Siman Tov | Kinematic Law Informed Control of Lower Limb Prostheses to Reduce Metabolic Cost in Amputees  | Supervisor: Asst. Prof. Nili Krausz
+Poster 36 | MSc | Tal Nesher | Experimental investigation of a planar three-link swimmer in viscous fluid  | Supervisor: Prof. Yizhar Or
+Poster 37 | MSc | Matan Baum | A Consequential Life Cycle Assessment of Ammonia as a Sustainable Energy Carrier for the Energy Sector | Supervisor: Asst. Prof. Thawko Andy
+Poster 38 | MSc | Sapir Solomon | Extracellular Matrix (ECM) Micropatterning for Regulation of Endothelial Cell-Cell Forces  | Supervisor: Asst. Prof. Leeya Engel
+Poster 39 | MSc | Ben Sarfati | Finite Element Analysis for the Design of Patient-Specific Weightbearing Ankle-Foot Orthosis  | Supervisor: Dana Solav
+Poster 40 | PhD | Eshraq Saffuri | An Adjustable Offloading Ankle Foot Orthosis for Enhanced Rehabilitation  | Supervisor: Dana Solav
+Poster 41 | PhD | Vlad Rinsky | Exploring optical activity with Tomo‑PIV for fiber-flow interaction in wall‑bounded turbulence  | Supervisor: Prof. Rene Van Hout
+Poster 42 | PhD | Saar Nitecki | Evaluating Lower Limb Prostheses Based on Interface Loading  | Supervisor: Asst. Prof. Nili Krausz
+Poster 43 | PhD | Avishai Dov | Development and Experimental Investigation of Hydrodynamic Performance in WLJB with Laser-Textured Journals  | Supervisor: Prof. Morel Groper
+Poster 44 | PhD | Daniel Bar | Design of a new Wave Energy Converter WEC  | Supervisor: Asst. Prof. Nitai Drimer
+Poster 45 | PhD | Zohar Oddes | Evaluation of Visual-Inertial Tracking for 3D Ultrasound Based Modeling  | Supervisor: Dana Solav
+Poster 46 | MSc | Yotam Katzman | Zero-waste manufacturing of ophthalmic lenses by direct Fluidic Shaping in arbitrary domains  | Supervisor: Prof. Moran Bercovichi
+Poster 47 | Post Doc | Dominic Sam Sebastian | Tomographic PIV study of fiber-flow interaction in a turbulent channel flow | Supervisor: Prof. Rene Van Hout
+Poster 48 | MSc | Tal Beit-Halevy | Assessment of Upper Limb Compensation during ADLs with Restricted Wrist Degrees of Freedom  | Supervisor: Asst. Prof. Nili Krausz
+Poster 49 | MSc | Micheal Cohen | Mechanical Behavior of Liquid Crystal Elastomers (LCE)  | Supervisor: Prof. Doron Shilo, Dr. Eilon Faran
+Poster 50 | MSc | Gilad Schussheim | Stabilization of a Suspended Load Using Active Flow Control  | Supervisor: Prof. David Greenblatt
